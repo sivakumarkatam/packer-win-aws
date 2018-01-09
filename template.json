@@ -6,10 +6,10 @@
     "builders": [{
         "type": "amazon-ebs",
         "region": "ap-southeast-1",
-        "source_ami": "ami-3cc6a640",
+        "source_ami": "ami-3daedf41",
         "instance_type": "t2.medium",
         "ami_name": "windows-ami {{timestamp}}",
-        "user_data_file":"./ec2-userdata.ps1",
+        "user_data_file":"./ec2-userdata.txt",
         "communicator": "winrm",
         "winrm_username": "{{user `winrm_name`}}", 
         "winrm_password": "{{user `winrm_pass`}}",
