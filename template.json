@@ -9,12 +9,10 @@
         "source_ami": "ami-3daedf41",
         "instance_type": "t2.medium",
         "ami_name": "windows-ami {{timestamp}}",
-        "user_data_file":"./ec2-userdata.txt",
+        "user_data_file": "./ec2-userdata.txt",
         "communicator": "winrm",
-        "winrm_username": "{{user `winrm_name`}}", 
-        "winrm_password": "{{user `winrm_pass`}}",
-        "winrm_use_ssl": true,
-        "winrm_insecure": true
+        "winrm_username": "Administrator", 
+        "winrm_password": "Tesn34&kosjdd"
     }],
 
     "provisioners": [
