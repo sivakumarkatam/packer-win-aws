@@ -11,7 +11,7 @@
         "ami_name": "windows-ami {{timestamp}}",
         "user_data_file": "./ec2-userdata.txt",
         "communicator": "winrm",
-        "winrm_username": "Administrator", 
+        "winrm_username": "siva", 
         "winrm_password": "Tesn34&kosjdd"
     }],
 
