@@ -3,7 +3,6 @@
     "winrm_name": "Administrator", 
     "winrm_pass": "Tesn34&kosjdd" 
     },
-{
     "builders": [{
         "type": "amazon-ebs",
         "region": "ap-southeast-1",
