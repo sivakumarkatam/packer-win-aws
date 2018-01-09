@@ -1,4 +1,9 @@
 {
+    "variables": {
+    "winrm_name": "Administrator", 
+    "winrm_pass": "Tesn34&kosjdd" 
+    },
+{
     "builders": [{
         "type": "amazon-ebs",
         "region": "ap-southeast-1",
@@ -7,7 +12,8 @@
         "ami_name": "windows-ami {{timestamp}}",
         "user_data_file":"./ec2-userdata.ps1",
         "communicator": "winrm",
-        "winrm_username": "Administrator",
+        "winrm_username": "{{user `winrm_name`}}", 
+        "winrm_password": "{{user `winrm_pass`}}",
         "winrm_use_ssl": true,
         "winrm_insecure": true
     }],
