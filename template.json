@@ -2,8 +2,8 @@
     "builders": [{
         "type": "amazon-ebs",
         "region": "us-east-1",
-        "source_ami": "ami-3d787d57",
-        "instance_type": "m3.medium",
+        "source_ami": "ami-3cc6a640",
+        "instance_type": "t2.medium",
         "ami_name": "windows-ami {{timestamp}}",
         "user_data_file":"./ec2-userdata.ps1",
         "communicator": "winrm",
